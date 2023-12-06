@@ -13,4 +13,13 @@
 */
 function calcularMedia() {
 
+  let nota1 = parseFloat (document.querySelector("#num1Soma").value)
+  let nota2 = parseFloat (document.querySelector("#num1Soma").value)
+  let nota3 = parseFloat (document.querySelector("#num1Soma").value)
+  let nota4 = parseFloat (document.querySelector("#num1Soma").value)
+
+  let media = (nota1 + nota2 + nota3 + nota4)/4
+
+  if media = 0 , "Infelizmente você zerou a prova :( "
+  else if >=0 && <=3, "Caramba, deu ruim, você obteve media {nota}! Estude mais e tente novamente"
 }

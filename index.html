@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <title>Projeto Final JS</title>
+    <title>Calculadora Online</title>
   </head>
   <body>
     <h1>[PretaLab - Turma 2] Módulo 3: Javascript</h1>
 
-    <!-- você pode colocar aqui uma imagem ou gif de sua preferência -->
+    <!-- colocar aqui uma imagem ou gif  -->
     <h1>🐛</h1>
 
     <main>
@@ -23,33 +23,31 @@
       </p>
 
       <div id="content">
-        <section id="projeto1">
+        <section id="calcbasica">
           <h2>Calculadora Básica</h2>
 
-          <input class="inputCalc" id="numero1Soma" type="number" required />
-          <input class="inputCalc" id="numero2Soma" type="number" required />
-          <button class="buttonCalc">SOMAR</button>
-          <p class="resultado">Resultado: </p>
+          <input class="inputCalc" id="num1Soma" type="number" required />
+          <input class="inputCalc" id="num2Soma" type="number" required />
+          <button class="buttonCalc" id="somar">SOMAR</button>
+          <p class="resultado" >Resultado: <strong id="resultadoSoma"></strong></p>
 
-          <input class="inputCalc" id="numero1Sub" type="number" required />
-          <input class="inputCalc" id="numero2Sub" type="number" required />
-          <button class="buttonCalc">SUBTRAIR</button>
-          <p class="resultado">Resultado: </p>
+          <input class="inputCalc" id="num1Sub" type="number" required />
+          <input class="inputCalc" id="num2Sub" type="number" required />
+          <button class="buttonCalc" id="subtrair">SUBTRAIR</button>
+          <p class="resultado">Resultado: <strong id="resultadoSub"></strong></p>
 
-          <input class="inputCalc" id="numero1Mult" type="number" required />
-          <input class="inputCalc" id="numero2Mult" type="number" required />
-          <button class="buttonCalc">
-            MULTIPLICAR
-          </button>
-          <p class="resultado">Resultado: </p>
+          <input class="inputCalc" id="num1Mult" type="number" required />
+          <input class="inputCalc" id="num2Mult" type="number" required />
+          <button class="buttonCalc" id="multiplicar">MULTIPLICAR</button>
+          <p class="resultado">Resultado: <strong id="resultadoMult"></strong></p>
 
-          <input class="inputCalc" id="numero1Div" type="number" required />
-          <input class="inputCalc" id="numero2Div" type="number" required />
-          <button class="buttonCalc">DIVIDIR</button>
-          <p class="resultado">Resultado: </p>
+          <input class="inputCalc" id="num1Div" type="number" required />
+          <input class="inputCalc" id="num2Div" type="number" required />
+          <button class="buttonCalc"id="dividir">DIVIDIR</button>
+          <p class="resultado">Resultado: <strong id="resultadoDiv"></strong></p>
         </section>
 
-        <section id="projeto2">
+        <section id="calcmedia">
           <h2>Calculadora de Médias</h2>
 
           <div id="contentCalcMedias">
@@ -84,7 +82,7 @@
       </div>
     </main>
 
-    <script type="text/javascript" src="/js/calculadora.js"></script>
-    <script type="text/javascript" src="/js/media.js"></script>
+    <script type="text/javascript" src="./calculadora.js"></script>
+    <script type="text/javascript" src="./media.js"></script>
   </body>
 </html>
