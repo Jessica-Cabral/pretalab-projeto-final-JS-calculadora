@@ -17,19 +17,17 @@ function calcularMedia() {
   } else if (media < 6) {
     mensagem = `Reprovado! Você obteve media ${media}! Faltou pouco para a média. Estude mais!`;
   } else if (media <= 7) {
-    mensagem = `Atenção! Aprovado na média! Média: ${media}!`;
+    mensagem = `Atenção! Aprovado na média! Média: ${media}.`;
   } else if (media < 10) {
-    mensagem = `Notão! Parabéns! Você foi aprovado. Média: ${media}!`;
+    mensagem = `Notão! Parabéns! Você foi aprovado. Média: ${media}.`;
   } else if (media === 10) {
-    mensagem = `Uau! ${media} de média. Parabéns você foi aprovado!`;
+    mensagem = `Uau! Média ${media}. Parabéns você foi aprovado!`;
   } else {
-    mensagem = "Verifique os dados inseridos";
+    alert("Os dados inválidos. Insira as nota com números entre 0 e 10.");
   }
   
-  const situacaoAluno = document.createElement ("p")
-  const divmedias = document.getElementById("contentCalcMedias")
-  divmedias.appendChild(situacaoAluno).innerText= mensagem
-
+  document.getElementById("situacaoAluno").innerText= mensagem
+  
 }
 
 btSituacaoAluno.addEventListener ('click', calcularMedia)

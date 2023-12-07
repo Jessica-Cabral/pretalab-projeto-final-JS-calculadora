@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Calculadora da Carol</title>
+    <title>Calculadora online</title>
   </head>
   <body>
     <h1>[PretaLab - Turma 2] Módulo 3: Javascript</h1>
 
-    <!-- colocar aqui uma imagem ou gif  -->
     <h1>🐛</h1>
 
     <main>
@@ -54,28 +53,27 @@
             <div id="notas">
               <div class="nota">
                 <label for="nota1">Nota 1</label>
-                <input class="inputNota" id="nota1" type="number" required />
+                <input class="inputNota" id="nota1" type="number" min="0" max="10" required />
               </div>
 
               <div class="nota">
                 <label for="nota2">Nota 2</label>
-                <input class="inputNota" id="nota2" type="number" required />
+                <input class="inputNota" id="nota2" type="number" min="0" max="10" required />
               </div>
 
               <div class="nota">
                 <label for="nota3">Nota 3</label>
-                <input class="inputNota" id="nota3" type="number" required />
+                <input class="inputNota" id="nota3" type="number" min="0" max="10" required />
               </div>
 
               <div class="nota">
                 <label for="nota4">Nota 4</label>
-                <input class="inputNota" id="nota4" type="number" required />
+                <input class="inputNota" id="nota4" type="number" min="0" max="10" required />
               </div>
             </div>
 
-            <button id="btSituacaoAluno">
-              Qual a situação do Aluno?
-            </button>
+            <button id="btSituacaoAluno"> Qual a situação do Aluno? </button>
+            <p><strong id="situacaoAluno"></strong></p>
 
           </div>
         </section>

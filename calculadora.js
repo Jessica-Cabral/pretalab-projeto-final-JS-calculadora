@@ -42,7 +42,7 @@ function dividir() {
 
     let resultado = num1 / num2
 
-        if (isNaN(num1) || isNaN(num2) || (num2 === 0)) {alert("Valor fora do domínio da função. Informe um número válido.")}
+    if (isNaN(num1) || isNaN(num2) || (num2 === 0)) {alert("Valor fora do domínio da função. Informe um número válido.")}
     else {document.getElementById ("resultadoDiv").innerHTML = (resultado)}
 
 }
