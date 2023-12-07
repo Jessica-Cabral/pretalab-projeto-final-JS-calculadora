@@ -25,12 +25,13 @@ function calcularMedia() {
 
       if (media ===0) {mensagem = (`Sua média é ${media}. Infelizmente você está reprovado`)
         } else if (media <= 3) {mensagem = (`Caramba, deu ruim, você obteve media ${media}! Estude mais!`)
-        } else if (media > 3 || media < 6) {mensagem = (`Você obteve media ${media}! Faltou pouco para a média. Estude mais e tente novamente!`)
-        } else if (media >= 6 || media <= 7) {mensagem = (`Você está na média! Sua nota é ${media}!`)
-        } else if (media > 7 || media < 10) {mensagem = (`Notão! Sua média é ${media}!`)
+        } else if (media < 6) {mensagem = (`Você obteve media ${media}! Faltou pouco para a média. Estude mais e tente novamente!`)
+        } else if (media <= 7) {mensagem = (`Você está na média! Sua nota é ${media}!`)
+        } else if (media < 10) {mensagem = (`Notão! Sua média é ${media}!`)
         } else if (media === 10) {mensagem = "Aluno nota 10! Parabéns você está aprovado!"
         } else {mensagem = ("Verifique os dados inseridos")
       }
+
 
   const situacaoAluno = document.createElement ("p")
   const divmedias = document.getElementById("contentCalcMedias")
