@@ -10,7 +10,7 @@ function somar() {
 
     let resultado = num1 + num2
 
-    if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função, consulte os valores inseridos.")}
+    if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função. Informe um número válido.")}
     else {document.getElementById ("resultadoSoma").innerHTML = resultado}
 
 }
@@ -21,7 +21,7 @@ function subtrair() {
 
     let resultado = num1 - num2
 
-    if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função, consulte os valores inseridos.")}
+    if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função. Informe um número válido.")}
     else {document.getElementById ("resultadoSub").innerHTML = resultado}
 }
 
@@ -31,7 +31,7 @@ function multiplicar() {
 
     let resultado = num1 * num2
 
-    if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função, consulte os valores inseridos.")}
+    if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função. Informe um número válido.")}
     else {document.getElementById ("resultadoMult").innerHTML = resultado}
 
 }
@@ -42,8 +42,8 @@ function dividir() {
 
     let resultado = num1 / num2
 
-        if (isNaN(num1) || isNaN(num2) || (num2 === 0)) {alert("Valor fora do domínio da função, consulte os valores inseridos.")}
-    else {document.getElementById ("resultadoDiv").innerHTML = (resultado).toFixed(2)}
+        if (isNaN(num1) || isNaN(num2) || (num2 === 0)) {alert("Valor fora do domínio da função. Informe um número válido.")}
+    else {document.getElementById ("resultadoDiv").innerHTML = (resultado)}
 
 }
 
