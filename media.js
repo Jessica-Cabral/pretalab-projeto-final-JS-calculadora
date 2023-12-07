@@ -13,15 +13,15 @@ function calcularMedia() {
   if (media ===0) {
     mensagem = `Reprovado! Você zerou todas as provas. Média: ${media}.`;
   } else if (media <= 3) {
-    mensagem = `Caramba, deu ruim, você reprovou! Você obteve media ${media}! Estude mais!`;
+    mensagem = `Caramba, deu ruim, você reprovou! Sua média foi ${media}! Estude mais!`;
   } else if (media < 6) {
-    mensagem = `Você obteve media ${media}! Faltou pouco para a média. Reprovado!`;
+    mensagem = `Reprovado! Você obteve media ${media}! Faltou pouco para a média. Estude mais!`;
   } else if (media <= 7) {
     mensagem = `Atenção! Aprovado na média! Média: ${media}!`;
   } else if (media < 10) {
     mensagem = `Notão! Parabéns! Você foi aprovado. Média: ${media}!`;
   } else if (media === 10) {
-    mensagem = `Uau! ${media} de média. Parabéns você foi aprovado!";
+    mensagem = `Uau! ${media} de média. Parabéns você foi aprovado!`;
   } else {
     mensagem = "Verifique os dados inseridos";
   }
