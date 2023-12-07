@@ -10,9 +10,11 @@ function somar() {
 
     let resultado = num1 + num2
 
-    if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função. Informe um número válido.")}
-    else {document.getElementById ("resultadoSoma").innerHTML = resultado}
-
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Valor fora do domínio da função. Informe um número válido.")
+    } else {
+        document.getElementById ("resultadoSoma").innerHTML = resultado
+    }
 }
 
 function subtrair() {
@@ -21,8 +23,11 @@ function subtrair() {
 
     let resultado = num1 - num2
 
-    if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função. Informe um número válido.")}
-    else {document.getElementById ("resultadoSub").innerHTML = resultado}
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Valor fora do domínio da função. Informe um número válido.")
+    } else {
+        document.getElementById ("resultadoSub").innerHTML = resultado
+    }
 }
 
 function multiplicar() {
@@ -31,9 +36,11 @@ function multiplicar() {
 
     let resultado = num1 * num2
 
-    if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função. Informe um número válido.")}
-    else {document.getElementById ("resultadoMult").innerHTML = resultado}
-
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Valor fora do domínio da função. Informe um número válido.")
+    } else {
+        document.getElementById ("resultadoMult").innerHTML = resultado
+    }
 }
 
 function dividir() {
@@ -42,9 +49,12 @@ function dividir() {
 
     let resultado = num1 / num2
 
-    if (isNaN(num1) || isNaN(num2) || (num2 === 0)) {alert("Valor fora do domínio da função. Informe um número válido.")}
-    else {document.getElementById ("resultadoDiv").innerHTML = (resultado)}
-
+    if (isNaN(num1) || isNaN(num2) || (num2 === 0)) {
+        alert("Valor fora do domínio da função. Informe um número válido.")
+    }
+    else {
+        document.getElementById ("resultadoDiv").innerHTML = (resultado)
+    }
 }
 
 botaoSomar.addEventListener ('click', somar)
