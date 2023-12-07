@@ -23,7 +23,7 @@ function calcularMedia() {
   } else if (media === 10) {
     mensagem = `Uau! Média ${media}. Parabéns você foi aprovado!`;
   } else {
-    alert("Os dados inválidos. Insira as nota com números entre 0 e 10.");
+    alert("Dados inválidos. Insira as nota com números entre 0 e 10.");
   }
   
   document.getElementById("situacaoAluno").innerText= mensagem
