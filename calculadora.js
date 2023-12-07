@@ -5,10 +5,10 @@ const botaoMultiplicar = document.getElementById("multiplicar")
 const botaoDividir = document.getElementById("dividir")
 
 function somar() {
-    const num1 = parseFloat (document.querySelector("#num1Soma").value)
-    const num2 = parseFloat (document.querySelector("#num2Soma").value)
+    let num1 = parseFloat (document.querySelector("#num1Soma").value)
+    let num2 = parseFloat (document.querySelector("#num2Soma").value)
 
-    const resultado = num1 + num2
+    let resultado = num1 + num2
 
     if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função, consulte os valores inseridos.")}
     else {document.getElementById ("resultadoSoma").innerHTML = resultado}
@@ -42,8 +42,8 @@ function dividir() {
 
     let resultado = num1 / num2
 
-        if (isNaN(num1) || isNaN(num2)) {alert("Valor fora do domínio da função, consulte os valores inseridos.")}
-    else {document.getElementById ("resultadoDiv").innerHTML = resultado}
+        if (isNaN(num1) || isNaN(num2) || (num2 === 0)) {alert("Valor fora do domínio da função, consulte os valores inseridos.")}
+    else {document.getElementById ("resultadoDiv").innerHTML = (resultado).toFixed(2)}
 
 }
 

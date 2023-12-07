@@ -1,5 +1,5 @@
 /*
-  Calcule a média da estudante, em seguida, com base na nota exiba as seguintes 
+  Calcular a média da estudante, em seguida, com base na nota exiba as seguintes 
   frases:
     1. Se a nota for 0, mostre na tela: "Infelizmente você zerou a prova :( "
     2. Se a nota for entre 0.1 e 3, mostre na tela: 
@@ -11,6 +11,8 @@
     6. Se a nota for entre 10, mostre na tela: 
       "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média"
 */
+const botaoSituacaoAluno = document.getElementById("calcularMedia")
+
 function calcularMedia() {
 
   let nota1 = parseFloat (document.querySelector("#num1Soma").value)
